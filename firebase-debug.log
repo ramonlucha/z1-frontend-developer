@@ -1,0 +1,72 @@
+[debug] [2021-02-22T18:03:34.235Z] ----------------------------------------------------------------------
+[debug] [2021-02-22T18:03:34.237Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Moncho\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2021-02-22T18:03:34.237Z] CLI Version:   9.4.0
+[debug] [2021-02-22T18:03:34.237Z] Platform:      win32
+[debug] [2021-02-22T18:03:34.237Z] Node Version:  v14.15.5
+[debug] [2021-02-22T18:03:34.238Z] Time:          Mon Feb 22 2021 19:03:34 GMT+0100 (hora estándar de Europa central)
+[debug] [2021-02-22T18:03:34.238Z] ----------------------------------------------------------------------
+[debug] [2021-02-22T18:03:34.238Z] 
+[debug] [2021-02-22T18:03:34.240Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2021-02-22T18:03:34.259Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-02-22T18:03:34.260Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Curso\ReactTypescript\calc-app
+
+Before we get started, keep in mind:
+
+  * You are currently outside your home directory
+  * You are initializing in an existing Firebase project directory
+
+[debug] [2021-02-22T18:03:34.719Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2021-02-22T18:03:34.720Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  .firebaserc already has a default project, using calc-app-mon-305415. 
+[debug] [2021-02-22T18:03:51.064Z] > refreshing access token with scopes: []
+[debug] [2021-02-22T18:03:51.064Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-02-22T18:03:51.174Z] <<< HTTP RESPONSE 200 {"expires":"Mon, 01 Jan 1990 00:00:00 GMT","pragma":"no-cache","date":"Mon, 22 Feb 2021 18:03:51 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-02-22T18:03:51.181Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/calc-app-mon-305415 [none]
+[debug] [2021-02-22T18:03:51.364Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/calc-app-mon-305415 200
+[debug] [2021-02-22T18:03:51.364Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/calc-app-mon-305415 {"projectId":"calc-app-mon-305415","projectNumber":"843889840271","displayName":"calc-app-mon","name":"projects/calc-app-mon-305415","resources":{"hostingSite":"calc-app-mon-305415"},"state":"ACTIVE"}
+[info] 
+=== Hosting Setup
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[debug] [2021-02-22T18:05:06.291Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/releases.json [none]
+[debug] [2021-02-22T18:05:06.392Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/releases.json 200
+[debug] [2021-02-22T18:05:06.392Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/releases.json {"current":{"version":"8.2.9","browserURL":"https://www.gstatic.com/firebasejs/8.2.9/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/8.2.9/firebase.tgz"},"live":{"version":"8.2","browserURL":"https://www.gstatic.com/firebasejs/live/8.2/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/live/8.2/firebase.tgz"},"components":{"analytics":"https://www.gstatic.com/firebasejs/8.2.9/firebase-analytics.js","app":"https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js","auth":"https://www.gstatic.com/firebasejs/8.2.9/firebase-auth.js","database":"https://www.gstatic.com/firebasejs/8.2.9/firebase-database.js","firestore":"https://www.gstatic.com/firebasejs/8.2.9/firebase-firestore.js","functions":"https://www.gstatic.com/firebasejs/8.2.9/firebase-functions.js","installations":"https://www.gstatic.com/firebasejs/8.2.9/firebase-installations.js","messaging":"https://www.gstatic.com/firebasejs/8.2.9/firebase-messaging.js","storage":"https://www.gstatic.com/firebasejs/8.2.9/firebase-storage.js","performance":"https://www.gstatic.com/firebasejs/8.2.9/firebase-performance.js","remote-config":"https://www.gstatic.com/firebasejs/8.2.9/firebase-remote-config.js","firestore.memory":"https://www.gstatic.com/firebasejs/8.2.9/firebase-firestore.memory.js"}}
+[info] +  Wrote y/index.html 
+[info] 
+[info] i  Didn't detect a .git folder. Assuming C:\Curso\ReactTypescript\calc-app is the project root. 
+[info] i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=985683177&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+[info] 
+[info] Waiting for authentication...
+[debug] [2021-02-22T18:05:06.920Z] >>> HTTP REQUEST POST https://github.com/login/oauth/access_token  
+ {"client_id":"89cf50f02ac6aaed3484","client_secret":"3330d14abc895d9a74d5f17cd7a00711fa2c5bf0","code":"f21241b65957c45187b7","redirect_uri":"http://localhost:9005","state":"985683177"}
+[debug] [2021-02-22T18:05:07.209Z] <<< HTTP RESPONSE 200 {"server":"GitHub.com","date":"Mon, 22 Feb 2021 18:05:07 GMT","content-type":"application/json; charset=utf-8","vary":"X-PJAX, Accept-Encoding, Accept, X-Requested-With","etag":"W/\"3e90a09953896ab166402b638e63fdd7\"","cache-control":"max-age=0, private, must-revalidate","strict-transport-security":"max-age=31536000; includeSubdomains; preload","x-frame-options":"deny","x-content-type-options":"nosniff","x-xss-protection":"1; mode=block","referrer-policy":"origin-when-cross-origin, strict-origin-when-cross-origin","expect-ct":"max-age=2592000, report-uri=\"https://api.github.com/_private/browser/errors\"","content-security-policy":"default-src 'none'; base-uri 'self'; block-all-mixed-content; connect-src 'self' uploads.github.com www.githubstatus.com collector.githubapp.com api.github.com github-cloud.s3.amazonaws.com github-production-repository-file-5c1aeb.s3.amazonaws.com github-production-upload-manifest-file-7fdce7.s3.amazonaws.com github-production-user-asset-6210df.s3.amazonaws.com cdn.optimizely.com logx.optimizely.com/v1/events wss://alive.github.com; font-src github.githubassets.com; form-action 'self' github.com gist.github.com; frame-ancestors 'none'; frame-src render.githubusercontent.com; img-src 'self' data: github.githubassets.com identicons.github.com collector.githubapp.com github-cloud.s3.amazonaws.com user-images.githubusercontent.com/ *.githubusercontent.com; manifest-src 'self'; media-src 'none'; script-src github.githubassets.com; style-src 'unsafe-inline' github.githubassets.com; worker-src github.com/socket-worker-5029ae85.js gist.github.com/socket-worker-5029ae85.js","x-github-request-id":"F373:2876:454D0F4:4F8C602:6033F253","transfer-encoding":"chunked"}
+[debug] [2021-02-22T18:05:07.214Z] >>> [apiv2][query] GET https://api.github.com/user [none]
+[debug] [2021-02-22T18:05:07.533Z] <<< [apiv2][status] GET https://api.github.com/user 200
+[debug] [2021-02-22T18:05:07.533Z] <<< [apiv2][body] GET https://api.github.com/user {"login":"ramonlucha","id":26148282,"node_id":"MDQ6VXNlcjI2MTQ4Mjgy","avatar_url":"https://avatars.githubusercontent.com/u/26148282?v=4","gravatar_id":"","url":"https://api.github.com/users/ramonlucha","html_url":"https://github.com/ramonlucha","followers_url":"https://api.github.com/users/ramonlucha/followers","following_url":"https://api.github.com/users/ramonlucha/following{/other_user}","gists_url":"https://api.github.com/users/ramonlucha/gists{/gist_id}","starred_url":"https://api.github.com/users/ramonlucha/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/ramonlucha/subscriptions","organizations_url":"https://api.github.com/users/ramonlucha/orgs","repos_url":"https://api.github.com/users/ramonlucha/repos","events_url":"https://api.github.com/users/ramonlucha/events{/privacy}","received_events_url":"https://api.github.com/users/ramonlucha/received_events","type":"User","site_admin":false,"name":null,"company":null,"blog":"","location":null,"email":null,"hireable":null,"bio":null,"twitter_username":null,"public_repos":4,"public_gists":0,"followers":1,"following":1,"created_at":"2017-03-02T18:49:48Z","updated_at":"2021-02-20T15:19:43Z","private_gists":0,"total_private_repos":0,"owned_private_repos":0,"disk_usage":373,"collaborators":0,"two_factor_authentication":false,"plan":{"name":"free","space":976562499,"collaborators":0,"private_repos":10000}}
+[info] 
+[info] +  Success! Logged into GitHub as ramonlucha 
+[info] 
