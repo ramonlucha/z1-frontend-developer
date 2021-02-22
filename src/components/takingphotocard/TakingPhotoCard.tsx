@@ -7,6 +7,7 @@ import dniOscuro from "../static/images/dniOscuro.jpg";
 import { clickHandlerButton } from "../maincard/MainCard";
 import "./TakingPhotoCard.css";
 import CircularProgress from '@material-ui/core/CircularProgress';
+import photoService from './photoService';
 
 type Props = {
   clickHandler: clickHandlerButton;
@@ -14,25 +15,18 @@ type Props = {
 
 const TakingPhotoCard: FC<Props> = ({ clickHandler }) => {
   const [validMessage,setValidMessage]= useState(<CircularProgress color="secondary" />);
-  const requestOptions = {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({ title: "React POST Request Example" }),
-  };
 
   useEffect(() => {
     // Actualiza el título del documento usando la API del navegador
-    fetch("https://front-exercise.z1.digital/evaluations", requestOptions).then(
-      async (response) => {
+    photoService.validatePhoto().then(
+      async (response:any) => {
         const result = await response.json();
 
         if (result.summary.outcome == "Too Much Glare") {   
           
           setValidMessage(isValid(false));
-          console.log(validMessage);
         } else {
           setValidMessage(isValid(true));
-          console.log(validMessage);
         }
       }
     );
@@ -73,15 +67,15 @@ const TakingPhotoCard: FC<Props> = ({ clickHandler }) => {
         <div>
           <CardContent>
             <Typography>
-              <text className="take-picture">Take picture</text>
+              <p className="take-picture">Take picture</p>
             </Typography>
           </CardContent>
           <CardContent>
             <Typography>
-              <text className="card-text">
+              <p className="card-text">
                 Fit your ID card inside the frame.<br></br> The picture will be
                 taken automatically
-              </text>
+              </p>
             </Typography>
             {validMessage}
           </CardContent>
@@ -90,7 +84,7 @@ const TakingPhotoCard: FC<Props> = ({ clickHandler }) => {
               className="redondo button-cancel 264 165"
               onClick={() => clickHandler(false)}
             >
-              <text className="black-text">CANCEL</text>
+              <p className="black-text">CANCEL</p>
             </button>
           </CardContent>
         </div>

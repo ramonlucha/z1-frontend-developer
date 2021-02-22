@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import MainCard from "./components/maincard/MainCard";
-import TakingPhotoCard from "./components/takinphotocard/TakingPhotoCard";
+import TakingPhotoCard from "./components/takingphotocard/TakingPhotoCard";
 
 
 
