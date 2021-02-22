@@ -12,7 +12,6 @@ const MainCard: FC<Props> = ({clickHandler}) => {
     <div>
       <Card className="card border-light" variant="outlined" style={{ width: "22%" }}>
         <div>
-          {/*} <Card.Title className="card-title">BankClient</Card.Title>{*/}
           <div className="text-izquierda">
             <p className="textBankClient">BankClient</p>
           </div>

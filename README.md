@@ -1,70 +1,42 @@
-# Getting Started with Create React App
+# Getting Started with React
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Added TypeScript to React
 
-In the project directory, you can run:
+Added Typescript to react with [npm install --save typescript @types/node @types/react @types/react-dom @types/jest] [https://create-react-app.dev/docs/adding-typescript/]
 
-### `npm start`
+### Hooks 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+This project includes hooks 
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### Using useState and useEffect
 
-### `npm test`
+this project uses useState and useEffect for more information check [https://es.reactjs.org/docs/hooks-effect.html]
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Destructuring Objects and Arrays
 
-### `npm run build`
+this project also implements destructuring . With destructuring, the equivalent code becomes more concise and readable.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### added consults to backend
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+we are using fetch in a service separating the logic from the view.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Added material-ui library. 
 
-### `npm run eject`
+the project has a library that allows to make a view easily. The library is material-ui more information in [https://material-ui.com/es/getting-started/installation/]
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### Using test for testing some text and some elements on our view.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+We added some test that allows to know if we had some error on our code
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### changes
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+we had to simulate the camera because we do not have a cam on our pc so we couldn't test the code properly.
 
-## Learn More
+### Future Changes
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+-add more and more efficient tests
+-try to add the library that allows us to use the camera when we have a camera
+-Improve the interface design to improve the quality of the user experience
+-implements Integration tests.

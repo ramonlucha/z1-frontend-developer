@@ -67,15 +67,15 @@ const TakingPhotoCard: FC<Props> = ({ clickHandler }) => {
         <div>
           <CardContent>
             <Typography>
-              <p className="take-picture">Take picture</p>
+              <text className="take-picture">Take picture</text>
             </Typography>
           </CardContent>
           <CardContent>
             <Typography>
-              <p className="card-text">
+              <text className="card-text">
                 Fit your ID card inside the frame.<br></br> The picture will be
                 taken automatically
-              </p>
+              </text>
             </Typography>
             {validMessage}
           </CardContent>
@@ -84,7 +84,7 @@ const TakingPhotoCard: FC<Props> = ({ clickHandler }) => {
               className="redondo button-cancel 264 165"
               onClick={() => clickHandler(false)}
             >
-              <p className="black-text">CANCEL</p>
+              <text className="black-text">CANCEL</text>
             </button>
           </CardContent>
         </div>

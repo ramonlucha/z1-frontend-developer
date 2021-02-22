@@ -7,13 +7,11 @@ test('All items appears on the screen', () => {
   expect(buttonTakePicture).toBeInTheDocument();
 });
 
-
 test('the function executes when button is clicked', () => {
     let check = false;
  const validateExecute = ()=>check=true;
   render(<MainCard clickHandler={()=>validateExecute()}></MainCard>);
-  const buttonTakePicture = screen.getByText(/TAKE PICTUREs/i);
+  const buttonTakePicture = screen.getByText(/TAKE PICTURE/i);
   buttonTakePicture.click();
   expect(check).toBeTruthy();
 });
-
